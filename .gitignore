@@ -1,0 +1,13 @@
+/log/
+bin/event_tracker
+bin/city-info
+pkg/
+.DS_Store
+.idea/
+*.iml
+output/
+CMakeLists.txt
+.statsd/
+build
+nohup.out
+city-info.*
