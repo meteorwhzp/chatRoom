@@ -1,0 +1,14 @@
+{
+    "workerCycle": 1,
+    "services": {
+        "hbase": {
+            "hosts": [
+                "100.90.101.21:9094",
+                "100.90.101.25:9094"
+            ],
+            "healthyThreshold": 10,
+            "minHealthyRatio": 0.67,
+            "maxCooldownTime": 60
+        }
+    }
+}

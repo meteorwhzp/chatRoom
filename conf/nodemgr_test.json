@@ -1,0 +1,32 @@
+{
+    "workerCycle": 1,
+    "services": {
+        "hbase": {
+            "hosts": [
+                "bigdata-arch-hdp01.bh:9090",
+                "bigdata-arch-hdp84.bh:9090",
+                "bigdata-arch-hdp11.bh:9090",
+                "bigdata-arch-hdp98.bh:9090",
+                "bigdata-arch-hdp74.bh:9090",
+                "bigdata-arch-hdp21.bh:9090",
+                "bigdata-arch-hdp67.bh:9090",
+                "bigdata-arch-hdp73.bh:9090",
+                "bigdata-arch-hdp78.bh:9090",
+                "bigdata-arch-hdp22.bh:9090",
+                "bigdata-arch-hdp66.bh:9090",
+                "bigdata-arch-hdp12.bh:9090",
+                "bigdata-arch-hdp44.bh:9090",
+                "bigdata-arch-hdp10.bh:9090",
+                "bigdata-arch-hdp32.bh:9090",
+                "bigdata-arch-hdp56.bh:9090",
+                "bigdata-arch-hdp09.bh:9090",
+                "bigdata-arch-hdp99.bh:9090",
+                "bigdata-arch-hdp68.bh:9090",
+                "bigdata-arch-hdp07.bh:9090"
+            ],
+            "healthyThreshold": 10,
+            "minHealthyRatio": 0.67,
+            "maxCooldownTime": 60
+        }
+    }
+}

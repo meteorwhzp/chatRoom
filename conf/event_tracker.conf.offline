@@ -1,0 +1,74 @@
+# event tracker 配置
+# all keys are lower-case
+
+[custom]
+#离线模式可以用phone、hbase
+onlinemode = 0
+#codis保存数据的时长，单位小时
+codis_timeout = 12
+#注意,value无引号!
+nodeconf = ./conf/nodemgr.json
+
+# http服务配置
+[http_server]
+port=8837
+
+# redis配置
+[redissvr]
+-=10.121.83.164:3000
+-=10.121.82.109:3000
+-=10.121.81.152:3000
+-=10.120.93.91:3000
+-=10.120.92.211:3000
+-=10.120.92.94:3000
+-=10.120.93.29:3000
+-=10.120.92.162:3000
+-=10.120.92.108:3000
+-=10.120.91.44:3000
+-=10.120.91.226:3000
+-=10.120.92.19:3000
+-=10.121.101.25:3000
+-=10.121.100.221:3000
+-=10.121.101.89:3000
+-=10.121.101.153:3000
+
+[redisclient]
+# redis连接超时 毫秒
+conntimeout=20
+# redis读超时 毫秒
+readtimeout=50
+# redis写超时 毫秒
+writetimeout=50
+# 最大空闲连接
+maxidle=80
+# 最大活动连接
+maxactive=1000
+
+#[misservice]
+#uid=coordinate
+#key=io1#@%jlFL19#5sF
+#testurl=http://10.10.8.74:8000/trunk/mis/v1/misOpenApi/misDriver/getDriverList
+#url=http://10.231.156.121:8000/gulfstream/mis/v1/misOpenApi/misDriver/getDriverList
+#timeout=100ms
+
+[hbase]
+nodename=hbase
+timeout=1000
+
+[passport]
+bizkey=100000
+secret_test=WK#uxKch<EbF
+host_test=10.94.97.201:8082
+secret_online=WK#uxKch<EbF
+host_online=http://10.231.158.59:8000
+uid_endpoint=/passport/user/getUserinfoByUid
+cellrole_endpoint=/passport/user/getUserinfoByCellRole
+conntimeout=20
+servetimeout=100
+
+[arius_order]
+url=http://100.69.238.11:8000/arius/gs_order_%v/_search
+conntimeout=100
+servetimeout=500
+user=41
+pass=maO1kExcf

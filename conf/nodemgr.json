@@ -1,0 +1,25 @@
+{
+    "workerCycle": 1,
+    "services": {
+        "hbase": {
+            "hosts": [
+                "100.90.101.21:9094",
+                "100.90.101.25:9094"
+            ],
+            "healthyThreshold": 10,
+            "minHealthyRatio": 0.67,
+            "maxCooldownTime": 60
+        },
+        "duse-eye": {
+            "hosts": [
+                "100.70.129.11:8086",
+                "100.69.186.35:8086",
+                "100.69.103.58:8086",
+                "100.69.195.38:8086"
+            ],
+            "healthyThreshold": 10,
+            "minHealthyRatio": 0.67,
+            "maxCooldownTime": 60
+        }
+    }
+}
